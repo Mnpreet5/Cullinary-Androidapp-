@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background___copy" />
+    <TextView
+        android:id="@+id/dishNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RED SAUCE PASTA"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <LinearLayout
+        android:id="@+id/detailsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/dishNameTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Difficulty: Medium&#10;Cooking Time: 30 mins&#10;Calories: 250&#10;Rating: 4.5"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/infoImageView"
+            android:layout_width="150dp"
+            android:layout_height="120dp"
+            android:src="@drawable/redsaucepasta"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ingredientsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/detailsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/ingredientsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ingredients:\n▢ 8 ounces uncooked pasta\n▢ 2 tablespoons butter\n▢ 2-3 cloves garlic, minced\n▢ 2 tablespoons tomato paste\n▢ 1 (14 ounce) can tomato sauce\n▢ 3/4 cup heavy/whipping cream\n▢ 1/4 teaspoon Italian seasoning\n▢ Salt and pepper to taste\n▢ Freshly grated parmesan cheese for serving, to taste"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/instructionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/ingredientsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/instructionsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Instructions:\n1. Boil a large, salted pot of water for your pasta and cook it al dente according to package instructions.\n2. Meanwhile (once the pasta starts to cook), add the butter to a skillet over medium-high heat. Once it melts, add the garlic and sauté for about a minute, stirring constantly.\n3. Add in the tomato paste, tomato sauce, cream, and Italian seasoning. Stir until it's nice and smooth. Let the sauce cook for about 5 minutes or until it's thickened to your liking (it should be very gently bubbling, so you may need to turn down the heat).\n4. Season the sauce with salt and pepper as needed. If the sauce is a little too acidic/tangy for your liking, add in a pinch of sugar.\n5. Drain the pasta and toss with the sauce (add a splash of hot pasta water if the sauce gets too thick). Serve immediately with plenty of parmesan cheese over top."
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

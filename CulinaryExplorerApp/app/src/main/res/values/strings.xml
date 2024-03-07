@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CulinaryExplorerApp</string>
+    <string name="facebook_app_id">803784084492230</string>
+    <string name="fb_login_protocol_scheme">fb803784084492230</string>
+    <string name="facebook_client_token">c1ae5988653c491433be084f0ad8f998</string>
+    <string name="default_web_client_id">693220992076-rhourstembbidlhrung4eifmgio1duaf.apps.googleusercontent.com</string>
+</resources>
